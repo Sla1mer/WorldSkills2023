@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace WS2023.Models.Entity;
+
+public partial class Purpose
+{
+    public int Id { get; set; }
+
+    public string? Name { get; set; }
+
+    public virtual ICollection<PersonalVisit> PersonalVisits { get; set; } = new List<PersonalVisit>();
+}
