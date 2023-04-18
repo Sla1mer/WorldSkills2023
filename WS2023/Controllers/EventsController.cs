@@ -26,16 +26,6 @@ namespace WS2023.Controllers
             return eventService.RegistrationPesonalEvent(personalVisit);
         }
 
-        //[HttpPost("/api/[controller]/regPersonalEventdasd")]
-        //public RequestResponse personalVisitdasd()
-        //{
-            //byte[] a = Convert.FromBase64String("VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIDEzIGxhenkgZG9ncy4=");
-            //foreach (byte b in a)
-            //{
-                //Console.WriteLine(b);
-            //}
-            //return new RequestResponse(200, JsonConvert.SerializeObject(a));
-        //}
 
         [HttpPost("/api/[controller]/regGroupEvent")]
         public Task<RequestResponse> groupVisit([FromBody] GroupEvent groupEvent)
